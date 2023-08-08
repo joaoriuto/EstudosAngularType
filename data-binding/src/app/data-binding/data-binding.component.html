@@ -1,17 +1,59 @@
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 <section class="property-binding">
-    <article>
+    <!-- <article>
         <h3>Interpolation / Interpolação</h3>
         <p>String renderizada com interpolação: {{ url }}</p>
         <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
         <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
         <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
-    </article>
-
+    </article> -->
+<!-- 
     <article>
         <h3>Property Binding</h3>
         <img src="{{ urlImagem }}" alt="Natureza">
         <img [src]="urlImagem" alt="Natureza">
         <img bind-src="urlImagem"> 
+    </article> -->
+
+    <article>
+        <h3>Class and Style Binding</h3>
+        <div>
+            Selecione uma classe:
+            <select #classe (change)="0">
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-info">Info</option>
+                <option value="alert-warning">Alerta</option>
+                <option value="alert-danger">Erro</option>
+            </select>
+            <br>
+            <br>
+
+            <div class="alert {{ classe.value }}" role="alert">
+                Texto colorido conforme valor no combobox.
+            </div>
+
+            <div class="alert alert" role="alert"
+            [class.alert-success]="classe.value == 'alert-success'">
+            Sucesso</div>
+            <div class="alert alert" role="alert"
+            [class.alert-info]="classe.value == 'alert-info'">
+            Info</div>
+            <div class="alert alert" role="alert"
+            [class.alert-warning]="classe.value == 'alert-warning'">
+            Alerta</div>
+            <div class="alert alert" role="alert"
+            [class.alert-danger]="classe.value == 'alert-danger'">
+            Erro</div>
+
+            <div class="alert alert-danger" role="alert"
+            [style.display]="classe.value == 'alert-danger' ? 'block': 'none'">
+                Somente em caso de erro!
+            </div>
+          
+        </div>
     </article>
+
 </section>
