@@ -1,0 +1,19 @@
+<p>show-data-again works!</p>
+
+
+    <div *ngIf="showAllData.length > 0">
+        <h2>Resultados</h2>
+        <ul>
+            <li *ngFor="let dado of showAllData">
+                {{ dado.id }}
+                
+                {{ dado.title }}
+                <br> <br>
+                {{ dado.description }}
+                
+            </li>
+        </ul>
+    </div>
+    <div *ngIf="showAllData.length === 0">
+        <p>Carregando dados...</p>
+      </div>
