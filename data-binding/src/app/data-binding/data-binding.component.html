@@ -10,12 +10,12 @@
         <p>Resultado de 1 + 1 não é: {{ 1 + 1 + getValor() }}</p>
         <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
     </article> -->
-<!-- 
+<!--
     <article>
         <h3>Property Binding</h3>
         <img src="{{ urlImagem }}" alt="Natureza">
         <img [src]="urlImagem" alt="Natureza">
-        <img bind-src="urlImagem"> 
+        <img bind-src="urlImagem">
     </article> -->
 
     <article>
@@ -52,7 +52,7 @@
             [style.display]="classe.value == 'alert-danger' ? 'block': 'none'">
                 Somente em caso de erro!
             </div>
-          
+
         </div>
     </article>
 
@@ -67,7 +67,7 @@
             </button>
             <br><br>
 
-            <input type="text" 
+            <input type="text"
                 (keyup)="onKeyUp($event)"
                 (keyup.enter)="salvarValor($event)"
                 (blur)="salvarValor($event)"/>
@@ -77,7 +77,7 @@
             <p>Valor salvo: {{ valorSalvo }}</p>
 
             <br>
-            <span (mouseover)="onMouseOver()" 
+            <span (mouseover)="onMouseOver()"
                   (mouseout)="onMouseOut()"
                   [class.highLight]="isMouseOver"
                   >
@@ -85,4 +85,14 @@
 
         </div>
     </article>
+</section>
+
+<section class="input-output-properties">
+  <article>
+    <h3>Input/Output Properties</h3>
+
+    <app-curso [nome]="nomeCurso"></app-curso>
+
+    <!-- <app-curso [nome]="nome"></app-curso> -->
+  </article>
 </section>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./data-binding.component.css']
 })
 export class DataBindingComponent implements OnInit {
-  
+
   url: string = 'http://loiane.com';
   cursoAngular: boolean = true;
   urlImagem = "http://lorempixel.com.br/400/200/nature/";
@@ -15,6 +15,8 @@ export class DataBindingComponent implements OnInit {
   valorSalvo: any = "";
 
   isMouseOver: boolean = false;
+
+  @Input() nomeCurso: string ='Angular';
 
   getValor(){
     return 1;
@@ -27,7 +29,7 @@ export class DataBindingComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  
+
   }
 
   botaoClicado(){
@@ -50,5 +52,5 @@ export class DataBindingComponent implements OnInit {
 
   }
 
-  
+
 }
