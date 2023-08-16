@@ -24,13 +24,9 @@ export class DataBindingComponent implements OnInit {
 
   getCurtirCurso(){
     return 1;
-  }
+  }  
 
-  constructor() { }
-
-  ngOnInit() {
-
-  }
+  
 
   botaoClicado(){
     alert();
@@ -52,5 +48,14 @@ export class DataBindingComponent implements OnInit {
 
   }
 
+  onMudouValor(evento: any) {
+    console.log(evento.novoValor); 
+  }
+ 
+  constructor() { }
+
+  ngOnInit() {
+
+  }
 
 }

@@ -92,6 +92,9 @@
     <h3>Input/Output Properties</h3>
 
     <app-curso [nome]="nomeCurso"></app-curso>
+    <contador [valor]=10>
+      (mudouValor)="onMudouValor($event)"
+    </contador>
 
     <!-- <app-curso [nome]="nome"></app-curso> -->
   </article>
