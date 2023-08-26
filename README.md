@@ -1,7 +1,9 @@
 <div align="center">
-<h1>Angular2 + Typescript</h1>
+<h1>Angular + Ionic + Typescript</h1>
 <img src="https://repository-images.githubusercontent.com/258754619/f9fb5680-886e-11ea-9093-f17ef7f53e4c"></img>
-
+    <p>
+        <img width=40%" src="https://images.prismic.io/ionicframeworkcom/d784b88d-9379-49f6-a7ca-502cfe1ea5f0_ionic+logotype+blue.png"></img>
+    </p>
 <p> 
     Master: Loiane Groner
 </p>
