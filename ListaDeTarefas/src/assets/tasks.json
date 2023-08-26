@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "Estudar programação",
+      "completed": false,
+      "editing": true
+    },
+    {
+      "id": 21,
+      "name": "Voltar para a academia",
+      "completed": false
+    },
+    {
+      "id": 22,
+      "name": "Praticar o TypeScript",
+      "completed": false
+    },
+    {
+      "id": 23,
+      "name": "Atualizando a tarefa anterior",
+      "completed": false
+    },
+    {
+      "id": 24,
+      "name": "Super certo!",
+      "completed": false
+    },
+    {
+      "id": 25,
+      "name": "Vamos comemorar!",
+      "completed": false
+    }
+  ]
+}

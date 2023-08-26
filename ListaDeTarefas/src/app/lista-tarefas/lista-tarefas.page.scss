@@ -1,0 +1,40 @@
+.lista {
+  background-color: rgba(100, 100, 100, 0.466);
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.header {
+  font-size: 1.8rem;
+  display: inline-block;
+  margin-left: 36%;
+  vertical-align: auto;
+}
+
+.icones {
+  margin-right: 1%;
+
+};
+
+.icones:hover {
+  color: red;
+};
+
+#editar:hover {
+  color: blue;
+}
+
+.inputs {
+  width: 75%;
+}
+
+.btn-icon {
+  float: right;
+  margin-right: 4%;
+  margin-top: 2%;
+
+}
+
+
